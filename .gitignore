@@ -1,0 +1,47 @@
+# ---- Never commit: secrets, keys, personal or runtime data ----
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.csr
+secrets/
+certs/
+*.secret
+*.token
+
+# Local runtime state written by the app (contacts, device credentials, provider vault, receipts, logs)
+*.db
+*.sqlite
+*.sqlite3
+*.tmp
+contacts*.json
+provider*.json
+device_auth*.json
+audit*.log
+*.log
+quantavoice/data/
+quantavoice/state/
+quantavoice/models/
+research_config.json
+gateway_config.json
+
+# ---- Python / build ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+
+# ---- OS / editor ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

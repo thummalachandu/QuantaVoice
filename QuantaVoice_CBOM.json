@@ -1,0 +1,217 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:e1fcf607-f01d-4cbd-9bf0-0897eb4afce7",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-10-12T04:12:11.510353+00:00",
+    "component": {
+      "type": "application",
+      "name": "QuantaVoice",
+      "version": "17.3"
+    }
+  },
+  "components": [
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "crypto/algorithm/ml-kem-768",
+      "name": "ML-KEM-768",
+      "description": "Standard: FIPS 203",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "primitive": "kem",
+          "parameterSetIdentifier": "ML-KEM-768",
+          "cryptoFunctions": [
+            "encapsulate",
+            "decapsulate"
+          ],
+          "nistQuantumSecurityLevel": 3
+        },
+        "oid": "2.16.840.1.101.3.4.4.2"
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "crypto/algorithm/ml-dsa-65",
+      "name": "ML-DSA-65",
+      "description": "Standard: FIPS 204",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "primitive": "signature",
+          "parameterSetIdentifier": "ML-DSA-65",
+          "cryptoFunctions": [
+            "sign",
+            "verify"
+          ],
+          "nistQuantumSecurityLevel": 3
+        },
+        "oid": "2.16.840.1.101.3.4.3.18"
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "crypto/algorithm/x25519",
+      "name": "X25519",
+      "description": "Standard: RFC 7748",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "primitive": "key-agree",
+          "parameterSetIdentifier": "X25519",
+          "cryptoFunctions": [
+            "keygen",
+            "keyderive"
+          ],
+          "nistQuantumSecurityLevel": 0
+        },
+        "oid": "1.3.101.110"
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "crypto/algorithm/aes-256-gcm",
+      "name": "AES-256-GCM",
+      "description": "Standard: SP 800-38D",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "primitive": "ae",
+          "parameterSetIdentifier": "256",
+          "cryptoFunctions": [
+            "encrypt",
+            "decrypt"
+          ],
+          "nistQuantumSecurityLevel": 5
+        },
+        "oid": "2.16.840.1.101.3.4.1.46"
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "crypto/algorithm/hkdf-sha256",
+      "name": "HKDF-SHA256",
+      "description": "Standard: RFC 5869 / SP 800-56C",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "primitive": "kdf",
+          "parameterSetIdentifier": "SHA-256",
+          "cryptoFunctions": [
+            "keyderive"
+          ],
+          "nistQuantumSecurityLevel": 2
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "crypto/algorithm/sha-256",
+      "name": "SHA-256",
+      "description": "Standard: FIPS 180-4",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "primitive": "hash",
+          "parameterSetIdentifier": "256",
+          "cryptoFunctions": [
+            "digest"
+          ],
+          "nistQuantumSecurityLevel": 2
+        },
+        "oid": "2.16.840.1.101.3.4.2.1"
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "crypto/algorithm/hmac-sha256",
+      "name": "HMAC-SHA256",
+      "description": "Standard: FIPS 198-1",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "primitive": "mac",
+          "parameterSetIdentifier": "SHA-256",
+          "cryptoFunctions": [
+            "tag"
+          ],
+          "nistQuantumSecurityLevel": 2
+        },
+        "oid": "1.2.840.113549.2.9"
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "crypto/algorithm/scrypt",
+      "name": "scrypt",
+      "description": "Standard: RFC 7914",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "primitive": "kdf",
+          "parameterSetIdentifier": "n=32768,r=8,p=1",
+          "cryptoFunctions": [
+            "keyderive"
+          ],
+          "nistQuantumSecurityLevel": 0
+        }
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "crypto/algorithm/ecdsa-p256 (webauthn es256 and tls certificates)",
+      "name": "ECDSA-P256 (WebAuthn ES256 and TLS certificates)",
+      "description": "Standard: FIPS 186-5 / WebAuthn L2",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "primitive": "signature",
+          "parameterSetIdentifier": "secp256r1",
+          "cryptoFunctions": [
+            "sign",
+            "verify"
+          ],
+          "nistQuantumSecurityLevel": 0
+        },
+        "oid": "1.2.840.10045.4.3.2"
+      }
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "crypto/algorithm/ecdhe (tls 1.2/1.3 key exchange, library default)",
+      "name": "ECDHE (TLS 1.2/1.3 key exchange, library default)",
+      "description": "Standard: RFC 8446 / RFC 5246",
+      "cryptoProperties": {
+        "assetType": "algorithm",
+        "algorithmProperties": {
+          "primitive": "key-agree",
+          "parameterSetIdentifier": "x25519 / secp256r1",
+          "cryptoFunctions": [
+            "keygen",
+            "keyderive"
+          ],
+          "nistQuantumSecurityLevel": 0
+        }
+      }
+    },
+    {
+      "type": "library",
+      "bom-ref": "lib/pqcrypto",
+      "name": "pqcrypto",
+      "version": "0.3.4"
+    },
+    {
+      "type": "library",
+      "bom-ref": "lib/cryptography",
+      "name": "cryptography",
+      "version": "46.0.6"
+    },
+    {
+      "type": "library",
+      "bom-ref": "lib/numpy",
+      "name": "numpy",
+      "version": "2.4.4"
+    }
+  ]
+}
